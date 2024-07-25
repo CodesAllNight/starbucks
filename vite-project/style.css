@@ -1,0 +1,157 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter",serif;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  overflow-x: hidden;
+
+}
+.nav-bar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#nav-bar-icon{
+  width: 1.5rem;
+}
+#starbucks-logo{
+  width: 3.1rem;
+}
+.main-body{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  
+}
+.coffee-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 2.5rem; */
+}
+.main-images{
+  width: 100%;
+  object-fit:contain
+}
+.card-text{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #006241;
+  margin-top: -.5rem;
+  gap: 2rem;
+}
+
+.main-heading{
+  color: white;
+  font-size:1.5rem ;
+  font-weight: 800;
+}
+.main-card-para{
+  color: white;
+}
+
+.main-card-button{
+  background-color: transparent;
+  padding: .5rem 1rem;
+  border:2px solid rgb(255, 255, 255);
+  border-radius:10rem;
+  color:white;
+  font-weight: bolder; 
+  cursor: pointer; 
+  transition: background-color .5s ease ;
+}
+
+.main-card-button:hover{
+  background-color: #014931;;
+}
+
+#second-card-text{
+ 
+  gap: 1.5rem;
+  background-color: #a3029a;
+}
+#second-card-heading{
+  font-size: 2rem;
+}
+#second-card-para{
+  font-size: 1.5rem;
+}
+
+#second-card-button:hover{
+  background-color: #900589;
+}
+#third-card-text{
+  background-color: #d3eae2;
+  color: #1e3932;
+}
+#third-card-heading,#third-card-para,#third-card-button{
+  color:#1e3932
+}
+#third-card-button{
+  border: 1px solid #006241;
+}
+#third-card-button:hover{
+  background-color: #a4cfc6;
+}
+#forth-card-text{
+  background-color: #97d8b1;
+}
+
+#forth-card-heading,#forth-card-para,#forth-card-button{
+  color:#1e3932
+}
+#forth-card-button{
+  border: 1px solid #006241;
+}
+#forth-card-button:hover{
+  background-color: #a4cfc6;
+}
+
+#disclaimer-para{
+  /* margin-bottom: 1rem; */
+  padding: 3rem;
+  width: 100%;
+  text-align: center;
+}
+#valid-only{
+  font-size: 1rem;
+}
+.hr{
+  background-color: #2a2f2d;
+}
+.footer-option-divs{
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: red; */
+  overflow: hidden;
+
+}
+.left{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color:#2a2f2d;
+}
+.arrow-imgs{
+  width: 2rem;
+}
+
