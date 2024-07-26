@@ -8,10 +8,15 @@
 
 body{
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
 
 }
 .nav-bar{
+  /* position: absolute; */
+  /* z-index: 1; */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -25,10 +30,100 @@ body{
 
 #nav-bar-icon{
   width: 1.5rem;
+  transform: rotate(0deg);
+  transition: transform .2s ease-in;
+  cursor: pointer;
 }
+
 #starbucks-logo{
   width: 3.1rem;
 }
+
+.nav-aside-open{
+
+
+
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+
+  align-items: flex-end;
+}
+.nav-container-aside{
+  margin-top: -2.5rem;
+  position: absolute;
+  box-shadow: inset 0 4px 3px -3px rgba(0, 0, 0, .1);
+  display: flex;
+  transform: translate(100%);
+  transition: transform .2s ease-in;
+  flex-direction: column;
+  box-shadow: inset  rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 2rem;
+  width: 80vw;
+  height: 100vh;
+  gap: 2rem;
+}
+
+
+
+.nav-aside-options{
+  font-size:1.4rem;
+  cursor: pointer;
+}
+
+.hr{
+  border: none;
+  height: 2px;
+  background-color: #dfdada;
+}
+
+.aside-nav-buttons{
+
+  background-color: transparent;
+  padding: .5rem 1.1rem;
+  border:1px solid rgb(0, 0, 0);
+  border-radius:10rem;
+  color:rgb(0, 0, 0);
+  font-weight: bolder; 
+  cursor: pointer; 
+}
+#sign-in-nav{
+
+  transition: background-color .2s ease;
+}
+
+
+#sign-in-nav:hover{
+  background-color: rgb(223, 223, 223);;
+}
+#join-now-nav{
+  transition: background-color .2s ease;
+  background-color: black;
+  color: white;
+  margin-left: .8rem;
+}
+#join-now-nav:hover{
+  background-color: rgb(67, 67, 67);
+}
+.find-store{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+} 
+#location-icon{
+  width: 1.2rem;
+
+}
+
+.find-store:hover{
+  color: green;
+}
+
+
 .main-body{
   display: flex;
   flex-direction: column;
@@ -76,8 +171,8 @@ body{
   cursor: pointer; 
   transition: background-color .5s ease ;
 }
-
-.main-card-button:hover{
+#card-one-button:hover{
+  cursor: pointer;
   background-color: #014931;;
 }
 
@@ -193,4 +288,3 @@ body{
   cursor: pointer;
 }
  
-
